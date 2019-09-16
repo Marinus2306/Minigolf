@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Golf 9 huller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Golf-Counter</h1>
+    </div>
+</div>
+
+
+
+<form name="formcalc">
+
+    <div class="Form">
+    Hul 1: <input type="text" id="txtnum1">
+    <br>
+    Hul 2: <input type="text" id="txtnum2">
+    <br>
+    Hul 3: <input type="text" id="txtnum3">
+    <br>
+    Hul 4: <input type="text" id="txtnum4">
+    <br>
+    Hul 5: <input type="text" id="txtnum5">
+    <br>
+    Hul 6: <input type="text" id="txtnum6">
+    <br>
+    Hul 7: <input type="text" id="txtnum7">
+    <br>
+    Hul 8: <input type="text" id="txtnum8">
+    <br>
+    Hul 9: <input type="text" id="txtnum9">
+    <br>
+
+
+     Slag i alt : <input type="text" id="txtres">
+    </div>
+
+    <input type="button" value="Beregn slag" onclick="sumValues()">
+
+    <script type="text/javascript">
+
+        function sumValues()
+        {
+            var num1, num2, num3, num4, num5, num6, num7, num8, num9, res;
+            if(isNaN(document.getElementById("txtnum1").value)){num1 = 0} else{num1 =Number(document.getElementById("txtnum1").value)}
+            if(isNaN(document.getElementById("txtnum2").value)){num2 = 0} else{num2 =Number(document.getElementById("txtnum2").value)}
+            if(isNaN(document.getElementById("txtnum3").value)){num3 = 0} else{num3 =Number(document.getElementById("txtnum3").value)}
+            if(isNaN(document.getElementById("txtnum4").value)){num4 = 0} else{num4 =Number(document.getElementById("txtnum4").value)}
+            if(isNaN(document.getElementById("txtnum5").value)){num5 = 0} else{num5 =Number(document.getElementById("txtnum5").value)}
+            if(isNaN(document.getElementById("txtnum6").value)){num6 = 0} else{num6 =Number(document.getElementById("txtnum6").value)}
+            if(isNaN(document.getElementById("txtnum7").value)){num7 = 0} else{num7 =Number(document.getElementById("txtnum7").value)}
+            if(isNaN(document.getElementById("txtnum8").value)){num8 = 0} else{num8 =Number(document.getElementById("txtnum8").value)}
+            if(isNaN(document.getElementById("txtnum9").value)){num9 = 0} else{num9 =Number(document.getElementById("txtnum9").value)}
+
+            res=num1+num2+num3+num4+num5+num6+num7+num8+num9;
+            document.getElementById("txtres").value=res;
+        }
+
+
+    </script>
+</form>
+
+<div class="footer">
+    <p>kontakt personale</p>
+    <p> Banens oversigt </p>
+</div>
+
+</body>
+</html>
